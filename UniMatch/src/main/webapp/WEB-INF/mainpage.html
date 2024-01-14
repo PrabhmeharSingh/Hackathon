@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Main</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/mainpage.css">
+
+</head>
+<body class="container-fluid justify-content-center">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top text-center">
+    <a class="navbar-brand" href="#">
+        <h3><span class="initials initials-animation">UniMatch</span></h3>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" onclick="move('home')">Filters</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" onclick="move('support')">Support</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="loginLink">My Profile</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="section row justify-content-center" id="profile">
+      <div class="col-sm-11 p-3 row bg-light align-self-top justify-content-center h-100" style="opacity:0.5;">
+        <div class="col-sm-5 " style="max-width:100%;">
+	<img class="img" src="mypicture.jpg" alt="Profile 1"  style="max-width:100%;">
+	</div>
+   </div>
+  </div>
+</body>
+</html>

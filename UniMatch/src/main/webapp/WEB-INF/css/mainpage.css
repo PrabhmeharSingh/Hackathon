@@ -1,0 +1,23 @@
+.section {
+  height: 100vh;
+  width:auto;
+  justify-content: center; 
+  flex-direction:row;
+  align-items: start; 
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 200px; 
+  color: white;
+}
+@media (min-width: 968px) {
+.img
+{
+max-height:65vh;
+}
+}
+@media (max-width: 968px) {
+.img
+{
+max-height:55vh;
+}
+}

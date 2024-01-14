@@ -1,0 +1,312 @@
+.navbar {
+  background-color: #041C32;
+  padding-top: 8px; 
+  padding-bottom: 8px; 
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+  opacity: 0.8 !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #46B5D1 !important;
+}
+
+.initials {
+  font-family: "Arial", sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  color: white !important;
+  margin-left: 25px;
+}
+
+.navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+}
+
+.pop-button {
+
+  border-radius: 25px; 
+  border: none; 
+  padding: 10px 20px; 
+  background-color: #46B5D1; 
+  color: white; 
+  cursor: pointer; 
+  outline: none; 
+  text-decoration: none; 
+  display: inline-block; 
+}
+
+.pop-button:hover {
+  box-shadow: 0 0 10px 3px #46B5D1;
+  transform: translateY(-2px);
+  
+}
+
+.button-wrapper {
+  margin-top: 50px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+
+}
+
+.button-text {
+  color: #46B5D1;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.about {
+  background-color: #041C32;
+}
+
+.contact {
+  color: #EEEEEE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100vh;
+  margin: 0 20%;
+}
+
+
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  margin-top: 55px;
+  margin: 0;
+  padding: 0;
+  top: -35px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 15%;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 80px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+  max-height: 80%;
+  overflow-y: auto;
+  border-radius: 10px; 
+  color: white; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#submitModal {
+  background-color: #46B5D1; 
+  color: white; 
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease; 
+}
+
+#submitModal:hover, #submitModal:focus {
+  background-color: #3a9cb8; 
+}
+.modal-message {
+  color: #46B5D1; 
+  font-size: 18px; 
+  text-align: center; 
+  margin-bottom: 20px; 
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .button-container {
+      height: 60vh;
+  }
+  .modal-content {
+      width: 80%;
+  }
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+    overflow-y: scroll;
+    scroll-padding-top: 80px; 
+    background-color: #041C32;
+}
+
+
+#about {
+  background-color: #041C32; 
+  color: white; 
+  padding: 40px;
+}
+.section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 200px; 
+  color: white;
+}
+#support {
+  background-color: #041C32;
+  color: white;
+  padding: 40px;
+  text-align: center;
+  position: relative;
+}
+
+#support h2, #support h3 {
+  color: #46B5D1;
+}
+
+.faq-section, .contact-info, .additional-resources {
+  margin-top: 20px;
+}
+
+.faq-section ul {
+  list-style-type: none;
+  text-align: left;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.contact-info p, .additional-resources a {
+  color: white;
+  margin-top: 10px;
+}
+#support a[href='https://www.instagram.com/unimatch/'] {
+  display: inline-block;
+  position: absolute;
+  bottom: 210px;
+  left: 25px;
+  background-color: transparent;
+}
+
+.feather-instagram {
+  height: 28px;
+}
+
+#support a[href='https://twitter.com/unimatch/'] {
+    position: absolute;
+    bottom: 170px; /* Adjust this value to position below the Instagram link */
+    left: 25px;
+    display: inline-block;
+    background-color: transparent;
+    transition: transform 0.2s ease-in-out;
+}
+
+#support a[href='https://twitter.com/unimatch/']:hover .feather-twitter {
+    stroke: #46B5D1;
+    transform: scale(1.1);
+}
+
+.feather-twitter {
+    height: 28px;
+    stroke: white;
+}
+#support .vertical-line {
+  position: absolute;
+  bottom: 0;
+  left: 33px;
+  content: "";
+  display: block;
+  width: 1.5px;
+  height: 110px;
+  margin: 0px auto;
+  background-color: white;
+}
+
+.socials a {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.socials a svg {
+  width: 24px;
+  height: 24px;
+  stroke: white;
+  transition: stroke 0.2s ease-in-out;
+}
+
+.socials a:hover svg {
+  stroke: #46B5D1;
+}
+
+#support .email-container {
+  position: absolute;
+  bottom: 150px;
+  right: 50px;
+  text-align: right;
+  background: transparent;
+}
+
+.email-link {
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  transform: rotate(90deg);
+  transform-origin: bottom right;
+  font-family: 'Terminus', monospace;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-top-left-radius: 5px;
+}
+
+#support .vertical-line2 {
+  position: absolute;
+  bottom: 0;
+  right: 37px;
+  content: "";
+  display: block;
+  width: 1.5px;
+  height: 130px;
+  margin: 0px auto;
+  background-color: white;
+}
+
+.email-link:hover {
+  color: #46B5D1;
+  text-decoration: none;
+}
